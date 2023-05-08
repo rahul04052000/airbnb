@@ -1,0 +1,13 @@
+1. clone the repo 
+2. npm install
+3. to run the project npm run start
+
+4. add icons using mui material ui
+
+5. run this command  npm install @mui/material @emotion/react @emotion/styled
+6. for using icons like search bar
+ we need to install:- npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
+ this command
+
+
+ 7.swipper js

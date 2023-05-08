@@ -1,0 +1,46 @@
+import React from "react";
+// import logo from assests directiory
+import logo from "../../assets/logo/long-logo.png";
+import "./styles.css";
+
+//  importing icon 
+import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
+import LanguageIcon from "@mui/icons-material/Language";
+import BasicMenu from "./ProfileMenu";
+import SimpleBottomNavigation from "./BottomNav";
+import MobileSearchBar from "../MobileSearchBar";
+
+function Header() {
+  return (
+    <div className="navbar">
+      {/* our company name logo */}
+      <img src={logo} alt="logo" className="navbar-logo" />
+
+      {/* searching logo  */}
+      <div className="search-bar">
+        <div className="search-bar-text">Anywhere</div>
+        <div className="search-bar-text">Any Week</div>
+        <div className="search-bar-text2">Add guests</div>
+        <div className="search-icon-div">
+          <SearchRoundedIcon className="search-icon" />
+        </div>
+      </div>
+      <div className="profile-container">
+        <div className="airbnb-your-home">Airbnb your home</div>
+        <div className="airbnb-your-home">
+          <LanguageIcon style={{ fontSize: "1.3rem" }} />
+        </div>
+        <div className="profile-div">
+          {/* menu bar */}
+          <BasicMenu />
+        </div>
+      </div>
+
+      
+      <MobileSearchBar />
+      <SimpleBottomNavigation />
+    </div>
+  );
+}
+
+export default Header;
